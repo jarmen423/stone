@@ -1,0 +1,25 @@
+[package]
+name = "stone-sim"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "stone-sim: deterministic simulation harness for the Stone sync engine"
+
+[dependencies]
+stone-core = { path = "../stone-core" }
+stone-server = { path = "../stone-server" }
+serde.workspace = true
+serde_json.workspace = true
+rand.workspace = true
+rand_chacha.workspace = true
+anyhow.workspace = true
+blake3.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tempfile.workspace = true
+tokio.workspace = true
+chrono.workspace = true
+
+[dev-dependencies]
+proptest = "1"
+tokio.workspace = true

@@ -1,0 +1,46 @@
+[package]
+name = "stone-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core library for Stone: vault model, parser, index, merge engine, sync agent, command registry"
+
+[dependencies]
+anyhow.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+toml.workspace = true
+serde_yaml.workspace = true
+rusqlite.workspace = true
+pulldown-cmark.workspace = true
+notify.workspace = true
+blake3.workspace = true
+chacha20poly1305.workspace = true
+argon2.workspace = true
+rand.workspace = true
+unicode-normalization.workspace = true
+unicode-segmentation.workspace = true
+similar.workspace = true
+fastcdc.workspace = true
+tokio.workspace = true
+reqwest.workspace = true
+tungstenite.workspace = true
+futures-util.workspace = true
+tracing.workspace = true
+tempfile.workspace = true
+uuid.workspace = true
+parking_lot.workspace = true
+regex.workspace = true
+once_cell.workspace = true
+base64.workspace = true
+zeroize.workspace = true
+fd-lock.workspace = true
+directories.workspace = true
+globset.workspace = true
+chrono.workspace = true
+hex.workspace = true
+
+[dev-dependencies]
+proptest = "1"
+rand_chacha.workspace = true

@@ -1,0 +1,33 @@
+[package]
+name = "stone-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "stone-server: encrypted sync server (axum + SQLite + blob store)"
+
+[lib]
+name = "stone_server"
+path = "src/lib.rs"
+
+[[bin]]
+name = "stone-server"
+path = "src/main.rs"
+
+[dependencies]
+stone-core = { path = "../stone-core" }
+axum.workspace = true
+tokio.workspace = true
+rusqlite.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+futures-util.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+tempfile.workspace = true
+uuid.workspace = true
+hex.workspace = true
+blake3.workspace = true
+chrono.workspace = true
+clap.workspace = true
